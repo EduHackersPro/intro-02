@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    font-family: Tahoma, Verdana;
+}
+
+html,
+body {
+    /*font-size: 50%;*/
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: url(img/glenn-carstens-peters-203007-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.cta {
+    background: rgba(255,255,255,.8);
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid rgba(0,0,0,.1);
+}
+
+.subscribe {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.subscribe label,
+.subscribe input,
+.subscribe button {
+    margin: .625rem 0 .25rem;
+    padding: .25rem;
+}
+
+.subscribe input {
+    margin-top: .125rem;
+}
+
+.subscribe button {
+    padding: .5rem;
+}
+
+@media screen and (max-width:1024px) {
+    .cta {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .cta {
+        width: 100%;
+        margin: 0;
+    }
+}
